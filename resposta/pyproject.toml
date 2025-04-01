@@ -1,0 +1,29 @@
+[project]
+name = "ci-cd"
+version = "0.1.0"
+description = ""
+authors = [{name = "Diego Ribeiro", email = "diegosrieiro@gmai.com"}]  
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "requests>=2.31.0",
+    "fastapi>=0.108.0",
+    "httpx>=0.26.0",
+    "uvicorn>=0.25.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.1.11",
+    "pytest>=7.4.4"
+]
+
+[tool.poetry]
+package-mode = false  
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+ruff = "^0.1.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
