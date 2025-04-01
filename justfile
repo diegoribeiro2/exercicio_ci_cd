@@ -1,4 +1,4 @@
 teste: 
-    poetry run pytest testes
+    cd resposta; poetry run pytest testes
 lint: 
-    poetry run ruff check scripts
+    poetry run ruff check resposta
