@@ -6,6 +6,7 @@ Este repositório utiliza **GitHub Actions** para automatizar o processo de **CI
 O CI garante que o código está sempre funcionando corretamente ao rodar testes automaticamente a cada mudança no repositório.
 
 No **GitHub Actions**, um workflow de CI normalmente faz:
+
 ✅ **Checkout do código** (pegar a versão mais recente do repositório).  
 ✅ **Rodar linter e formatador** (garante que o código segue um padrão, ex: `black`, `flake8`).  
 ✅ **Executar testes automatizados** (testa se tudo está funcionando, ex: `pytest`).  
